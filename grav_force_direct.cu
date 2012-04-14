@@ -13,7 +13,7 @@ struct ds64
 {
   float2 val;
   __host__ __device__ ds64() {}
-  __host__ __device__ ds64(const float x) : val(make_float2(x, x)) {}
+  __host__ __device__ ds64(const float x) : val(make_float2(x, 0.0f)) {}
   __host__ __device__ ds64(const double x)
   {
     val.x = (float)x;
