@@ -1,0 +1,7 @@
+-- This is not a tree but a direct gravitational force calculation for SPH codes 
+   (see Appendix in http://adsabs.harvard.edu/abs/1989ApJS...70..419H for equations of softened gravitational force)
+
+I included it for completness, in case one wants to test acrruacy (or modify) libSequoia and check the correctness, because this direct library computes
+exact force (up to ds64 - an emulated double precision via use of 2 fp32 (single precision) numbers). The code can be easily change for full fp64,
+by approperiatly changing ds64 class.
+
